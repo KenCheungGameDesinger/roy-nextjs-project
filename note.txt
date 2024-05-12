@@ -1,0 +1,3 @@
+https://dummyjson.com/docs/products
+
+https://fakestoreapi.com/docs

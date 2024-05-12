@@ -15,8 +15,11 @@ import {
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 
+type Props = React.HTMLProps<HTMLDivElement> & {
 
-export function ThemeToggle() {
+}
+
+export function ThemeToggle({ children }: Props) {
     const { setTheme } = useTheme()
     return (
         <DropdownMenu>

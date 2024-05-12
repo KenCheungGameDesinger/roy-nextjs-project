@@ -1,20 +1,17 @@
 'use client'
 
 
-import Image from "next/image";
-import MyButton from "./_component/MyButton";
-import { Button } from "@/components/ui/button";
-import { useEffect, useState } from "react";
-import NumberSelection from "./_component/numberSelection";
-import { ThemeToggle } from "@/components/ThemeToggle";
+import { useState } from "react";
 import ProductGalary from "./_component/ProductGalary";
+import Header from "@/components/header";
 
 export default function Home() {
   const [age, setCount] = useState(0)
   const [height, setHeight] = useState(0)
   return (
     <div>
-      <ThemeToggle />
+
+      <Header />
       <ProductGalary />
       {/* <p className="hidden md:block">Age:</p>
       <NumberSelection value={age} onChange={setCount} min={-5} max={5} />
