@@ -15,7 +15,7 @@ function Header({ }: Props) {
                 <a href='/' className='text-xl font-bold mx-1'>KShop</a>
             </div>
 
-            <div className='flex align-center space-x-8'>
+            {/* <div className='flex align-center space-x-8'>
                 <Link href="home" className='my-auto'>Home</Link>
                 <Link href="product" className='my-auto'>Product</Link>
                 <Link href="about-us" className='my-auto'>About us</Link>
@@ -25,8 +25,20 @@ function Header({ }: Props) {
                     <ThemeToggle />
                     <ShoppingCart className='w-6 h-6 my-auto' />
                 </div>
-            </div>
+            </div> */}
 
+            {/* Fixed: my-auto -> items-center */}
+            <div className='flex align-center space-x-8 items-center'>
+                <Link href="/" className=''>Home</Link>
+                <Link href="product" className=''>Product</Link>
+                <Link href="about-us" className=''>About us</Link>
+                <Link href="contact-us" className=''>Contact Us</Link>
+                <SearchInput className=''></SearchInput>
+                <div className='flex space-x-2 items-center'>
+                    <ThemeToggle />
+                    <ShoppingCart className='w-6 h-6 ' />
+                </div>
+            </div>
 
         </Container>
     )

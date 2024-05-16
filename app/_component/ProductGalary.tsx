@@ -1,3 +1,5 @@
+import ProductCard from '@/components/Products/productCard'
+import Container from '@/components/container'
 import React from 'react'
 
 type Props = {}
@@ -7,14 +9,14 @@ const ProductGalary = async (props: Props) => {
     const prouducts = await res.json()
 
     return (
-        <div className='bg-slate-100'>ProductGalary
-            {prouducts.products.map((product: any, index: number) => (
-                <div key={index} className='mb-4 bg-white  '>
-                    <h1>{product.title}</h1>
-                    <p>{product.description}</p>
-                    <p>{product.price}</p>
-                </div>
-            ))}
+
+        <div className='bg-slate-100'>
+            <Container>
+                ProductGalary
+                {prouducts.products.map((product: any, index: number) => (
+                    <ProductCard key={index} product={product} index={index} />
+                ))}
+            </Container>
         </div>
     )
 }
