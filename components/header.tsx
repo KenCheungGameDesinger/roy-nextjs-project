@@ -30,7 +30,7 @@ function Header({ }: Props) {
             {/* Fixed: my-auto -> items-center */}
             <div className='flex align-center space-x-8 items-center'>
                 <Link href="/" className=''>Home</Link>
-                <Link href="product" className=''>Product</Link>
+                <Link href="/product" className=''>Product</Link>
                 <Link href="about-us" className=''>About us</Link>
                 <Link href="contact-us" className=''>Contact Us</Link>
                 <SearchInput className=''></SearchInput>
