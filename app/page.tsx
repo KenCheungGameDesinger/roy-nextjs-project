@@ -4,6 +4,7 @@ import { useState } from "react";
 import ProductGalary from "./_component/ProductGalary";
 import Header from "@/components/header";
 import { Toaster } from "@/components/ui/toaster";
+import HeroSection from "@/components/Products/HeroSection";
 
 export default function Home() {
   const [age, setCount] = useState(0);
@@ -11,6 +12,7 @@ export default function Home() {
   return (
     <div>
       <Header />
+      <HeroSection />
     </div>
   );
 }
